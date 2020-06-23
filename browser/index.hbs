@@ -50,20 +50,18 @@
         <label><input type="checkbox" id="one-step-login"> One step login</label>
         <br/>
         using
-
-          <label><input type="radio" value="" name="login-method" checked>Credentials</label>
           <fieldset>
-            <legend>Passwordless</legend>
-            <label><input type="radio" value="otp-email" name="login-method">Email</label>
-            <label><input type="radio" value="otp-sms" name="login-method">SMS</label>
+            <legend>Authentication methods</legend>
+            <label><input type="radio" value="" name="login-method" checked>Password</label>
+            <label><input type="radio" value="otp" name="login-method">Password + Code generator</label>
+            <label><input type="radio" value="sms" name="login-method">Password + SMS code</label>
+            <label><input type="radio" value="mfa" name="login-method">Password + Code or SMS</label>
+            <label><input type="radio" value="otp sms" name="login-method">Password + Code and SMS</label>
           </fieldset>
           <fieldset>
-            <legend>MFAs</legend>
-            <label><input type="radio" value="" name="login-method">None</label>
-            <label><input type="radio" value="otp" name="login-method">Code genreator</label>
-            <label><input type="radio" value="sms" name="login-method">SMS code</label>
-            <label><input type="radio" value="mfa" name="login-method">Multifactor auth (any)</label>
-            <label><input type="radio" value="otp sms" name="login-method">Multifactor auth (both SMS & Code)</label>
+              <legend>Passwordless</legend>
+              <label><input type="radio" value="otp-email" name="login-method">Email</label>
+              <label><input type="radio" value="otp-sms" name="login-method">SMS</label>
           </fieldset>
         <br/>
         <hr/>
